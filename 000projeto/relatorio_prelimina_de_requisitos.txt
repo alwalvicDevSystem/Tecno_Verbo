@@ -1,0 +1,5 @@
+Plataforma onde será postado artigos da area de TI
+- Os artigos deveram ter titulo, autor/atores do artigo, poderá conter imagens e videos relacionados ao artigo ( citando a fonte);
+- Deverá conter uma pagina onde haverá a apresentação de seus idealizadores incluindo suas redes socias;
+- Deverá conter filtro das matérias e artigo de acordo com a matéria que ele engloba;
+- Deverá permitir que os administradores incluam links de site sobre livros e produtos relacionados
