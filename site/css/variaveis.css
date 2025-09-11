@@ -1,0 +1,32 @@
+@import url(./_reset.css);
+
+:root {
+    /*cores */
+    --amarelo: #FFFF00;
+    --amarelo_claro: #FDF3C4;
+    --azul: #0F4098;
+    --azul_claro: #D8EAEE;
+    --branco: #FFFFFF;
+    --cinza_claro: #DCDCDC;
+    --preto: #000000;
+
+    /*tipografia*/
+    --fonte_padrao: "Roboto", sans-serif;
+    --titulo_1: 32px;
+    --titulo_2: 20px;
+    --titulo_3: 14px;
+    --texto_grande: 20px;
+    --texto_normal: 16px;
+    --texto_pequeno: 12px;
+    --texto_muito_pequeno: 8px;
+    --espacamento_grande: 16px;
+    --espacamento_normal: 8px;
+    --espacamento_pequeno: 4px;
+
+    /*bordas*/
+    --desktop_largura_maxima: 100% ;
+    --margem_grande: 64px;
+    --margem_media: 32px;
+    --margem_pequena: 16px;
+    --raio_pequeno: 4px;
+}

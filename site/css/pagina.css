@@ -1,0 +1,86 @@
+/*----------componetes----------*/
+@import url(./componentes/cptAbaLink.css);
+@import url(./componentes/cptMenuLink.css);
+
+.pagina{
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte_padrao);
+    gap: var(--espacamento_grande);
+}
+
+.container{
+    margin: 0 auto;
+    max-width: var(--desktop_largura_maxima);
+    background-color:inherit;
+}
+
+.cabecalho{
+    background-color: inherit;
+}
+
+.cabecalho__aba{
+   padding: 0 var(--margem_grande);
+}
+
+.cabecalho_aba__container{   
+    display: flex;    
+    flex-direction: row;
+    gap: 0;  
+    justify-content: flex-end;  
+}
+
+.cabecalho__logo{
+    background-color: var(--amarelo_claro);
+    padding: var(--espacamento_normal) var(--margem_grande);
+}
+
+.cabecalho_logo__container{
+    display:flex;
+    justify-content: center;
+}
+
+.cabecalho__menu{
+    background-color: var(--azul);
+    padding: 0 var(--margem_grande);
+}
+
+.cabecalho_menu__container{
+    display: flex;
+    flex-direction: row;
+    gap:0;
+}
+.conteudo{
+    background-color:aquamarine;
+}
+
+.rodape{
+    background-color: rebeccapurple;
+}
+
+/*==========reponsividade==========*/
+@media screen and (max-width: 744px){
+    .cabecalho__aba{
+        padding: 0 var(--margem_media);
+     }
+    .cabecalho__logo{        
+        padding: var(--espacamento_normal) var(--margem_media);
+    }
+
+    .cabecalho__menu{
+        padding: 0 var(--margem_media);
+     }
+}
+
+@media screen and (max-width: 320px){
+    .cabecalho__aba{
+        padding: 0 var(--margem_pequena);
+     }
+    .cabecalho__logo{        
+        padding: var(--espacamento_normal) var(--margem_pequena);
+    }
+    .cabecalho__menu{
+        padding: 0 var(--margem_pequena);
+     }
+}

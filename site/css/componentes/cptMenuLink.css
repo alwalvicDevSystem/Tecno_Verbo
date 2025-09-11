@@ -1,0 +1,30 @@
+.cptMenuLink{
+    background-color: inherit;
+    color: var(--branco);
+    font-family: inherit;   
+    font-size: var(--texto_normal);
+    padding: 4px 8px;
+    transition: all .5s linear;
+}
+
+.cptMenuLink:hover{
+    background-color: var(--amarelo);
+    color: var(--preto);    
+}
+
+.cptMenuLink a{
+    color: inherit;
+    font-family: inherit;   
+}
+
+@media screen and (max-width: 744px){
+    .cptMenuLink{
+        font-size: var(--texto_pequeno);
+    }
+}
+
+@media screen and (max-width: 320px){
+    .cptMenuLink{
+        font-size: var(--texto_muito_pequeno);
+    }
+}
