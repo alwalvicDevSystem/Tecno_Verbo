@@ -28,5 +28,7 @@
     --margem_grande: 64px;
     --margem_media: 32px;
     --margem_pequena: 16px;
+    --margem_muito_pequena: 8px;
+    --margem_micro: 4px;
     --raio_pequeno: 4px;
 }

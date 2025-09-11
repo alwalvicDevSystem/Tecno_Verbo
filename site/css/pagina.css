@@ -1,6 +1,7 @@
 /*----------componetes----------*/
 @import url(./componentes/cptAbaLink.css);
 @import url(./componentes/cptMenuLink.css);
+@import url(./componentes/cptArtigo.css);
 
 .pagina{
     background-color: var(--branco);
@@ -52,7 +53,24 @@
     gap:0;
 }
 .conteudo{
+    display: flex;
+    flex-direction: row;
     background-color:aquamarine;
+}
+
+.conteudo_conteudoPrincipal__container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: blueviolet;
+    padding: var(--margem_muito_pequena) var(--margem_muito_pequena) var(--margem_muito_pequena) var(--margem_grande);
+    width: 70vw;
+}
+
+.conteudo_conteudoLateral__container{
+    background-color: yellowgreen;
+    padding: var(--margem_muito_pequena) var(--margem_grande) var(--margem_muito_pequena) var(--margem_muito_pequena);
+    width: 30vw;
 }
 
 .rodape{
