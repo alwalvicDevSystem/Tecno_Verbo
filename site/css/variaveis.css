@@ -24,11 +24,12 @@
     --espacamento_pequeno: 4px;
 
     /*bordas*/
-    --desktop_largura_maxima: 100% ;
+    --desktop_largura_maxima: 100vw ;
     --margem_grande: 64px;
     --margem_media: 32px;
     --margem_pequena: 16px;
     --margem_muito_pequena: 8px;
     --margem_micro: 4px;
     --raio_pequeno: 4px;
+    --borda_normal: 2px;
 }
