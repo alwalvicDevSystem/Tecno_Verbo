@@ -32,7 +32,7 @@
     font-size: var(--titulo_3);   
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 680px){
     .cptCardLivro{
         width: 126px;
     }   

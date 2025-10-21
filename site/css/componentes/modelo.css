@@ -5,16 +5,32 @@
     height: 187px;
 }
 
-@media screen and (max-width: 744px){
+@media screen and (max-width: 1240px){
     .artigo{
         width: 200px;
         height: 297px;
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 680px){
     .artigo{
         width: 288px;
         height: 137px;
     }
 }
+
+
+/*----------------------cardLivro-------------------------*/
+.cardLivro{
+    background-color: var(--azul_claro);
+    border: 1px solid var(--preto);
+    height: 196px;
+    width: 160px;
+}
+
+@media screen and (max-width:680px){
+    .cardLivro{
+        width: 126px;
+    }
+}
+

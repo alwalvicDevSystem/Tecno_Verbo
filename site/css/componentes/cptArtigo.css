@@ -88,7 +88,7 @@
     }
 }
 
-@media screen and (max-width: 320px){ /*regular*/
+@media screen and (max-width: 680px){ /*regular*/
     .cptArtigo{
         gap: var(--espacamento_pequeno);
         width: 288px;
