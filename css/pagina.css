@@ -1,0 +1,135 @@
+/*----------componetes----------*/
+@import url(cabecalhoRodape.css);
+@import url(./componentes/cptAbaLink.css);
+@import url(./componentes/cptMenuLink.css);
+@import url(./componentes/cptArtigo.css);
+@import url(./componentes/modelo.css);
+
+.pagina{
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte_padrao);
+    gap: var(--espacamento_grande);
+}
+
+.container{
+    margin: 0 auto;
+    max-width: var(--desktop_largura_maxima);
+    background-color:inherit;
+}
+
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color:aquamarine;  
+    max-width: 100vw;  
+}
+
+.conteudo__principalContainer{
+    --larguraArtigo: 388px;
+    --numeroDeColunas: 3;
+
+    display: grid;
+    grid-template-columns: repeat( var(--numeroDeColunas), var(--larguraArtigo));
+    column-gap: calc((100% - (var(--larguraArtigo) * var(--numeroDeColunas))) / (var(--numeroDeColunas) - 1));
+    row-gap: var(--espacamento_grande);
+    
+    padding: var(--margem_muito_pequena) var(--margem_muito_pequena) var(--margem_muito_pequena) var(--margem_grande);
+
+    background-color: sandybrown;
+    height: auto;
+    width:70%;    
+}
+
+.conteudo__lateralContainer{
+    --larguraLivro: 160px;
+    --numeroDecolunasLivro: 2;
+
+    display: grid;
+    grid-template-columns: repeat( var(--numeroDecolunasLivro), var(--larguraLivro)); 
+    column-gap: calc((100% - (var(--larguraLivro) * var(--numeroDecolunasLivro))) / (var(--numeroDecolunasLivro) - 1));
+    padding: var(--margem_muito_pequena) var(--margem_grande) var(--margem_muito_pequena) var(--margem_muito_pequena);
+    row-gap: var(--espacamento_grande);
+    background-color:greenyellow;
+    width:30%;
+}
+
+/*==========reponsividade==========*/
+@media screen and (max-width: 1780px){ /*complementar*/
+    .conteudo__principalContainer{ 
+        --numeroDeColunas: 2;
+    }
+}
+
+@media screen and (max-width: 1330px){
+    .conteudo__lateralContainer{
+        --numeroDecolunasLivro: 1;
+        column-gap: 0;
+    }
+}
+
+@media screen and (max-width: 1240px){
+    .conteudo__principalContainer{
+        --larguraArtigo: 200px;
+        --numeroDeColunas: 3;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .conteudo__principalContainer{        
+        --numeroDeColunas: 2;
+    }
+}
+
+
+
+@media screen and (max-width: 744px){ /*regular*/
+    .conteudo__principalContainer{
+        padding: var(--margem_micro) var(--margem_micro) var(--margem_micro) var(--margem_media); 
+    } 
+
+    .conteudo__lateralContainer{
+        padding: var(--margem_micro) var(--margem_media) var(--margem_micro) var(--margem_micro);
+    }    
+}
+
+@media screen and (max-width: 680px){ /*complementar*/
+    .conteudo__principalContainer{        
+        --numeroDeColunas: 1;
+        column-gap: none;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .conteudo{       
+        flex-direction: column;        
+    }
+
+    .conteudo__principalContainer{        
+        width: 100vw;
+    }
+
+    .conteudo__lateralContainer{
+       --larguraLivro: 160px;
+        --numeroDecolunasLivro: 2;
+
+        padding-left: var(--margem_media);
+        column-gap: calc((100% - (var(--larguraLivro) * var(--numeroDecolunasLivro))) / (var(--numeroDecolunasLivro) - 1));
+        width: 100vw;
+    }
+}
+
+
+@media screen and (max-width: 320px){ /*regular*/    
+    .conteudo__principalContainer{
+        padding: var(--margem_micro) var(--margem_micro) var(--margem_micro) var(--margem_pequena);       
+    }
+
+    .conteudo__lateralContainer{
+        padding: var(--margem_micro) var(--margem_micro) var(--margem_micro) var(--margem_pequena);       
+    }   
+}
+
