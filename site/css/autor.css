@@ -48,8 +48,70 @@
     width: fit-content;
 }
 
+.conteudo__sobre{
+    background-color: pink;
+
+    color: var(--preto);
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacamento_grande);
+    max-width: var(--desktop_largura_maxima);
+    padding: var(--margem_media) var(--margem_grande);
+}
+
+.conteudo_sobre__titulo{
+    font-size: var(--titulo_1);
+    font-weight: bold;
+}
+
+.conteudo_sobre__imagemTexto{
+    --imagemTexto_largura_base: 400px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sobre_imagemTexto__imagem{
+    width: var(--imagemTexto_largura_base);
+    height: calc( var(--imagemTexto_largura_base) * 1.2);
+}
+
+.sobre_imagemTexto__texto{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--texto_grande);
+    justify-content: space-between;
+
+    width: var(--imagemTexto_largura_base);
+    height: calc( var(--imagemTexto_largura_base) * 1.2);
+}
+
+.imagemTexto_texto__textoDestaque{
+    font-size: var(--titulo_2);
+    font-weight: bold;
+}
 
 /*=====responsividade=====*/
+@media screen and (max-width: 960px){ /*transição*/
+    .conteudo_sobre__titulo{
+        font-size: var(--titulo_2);    
+    }
+
+    .conteudo_sobre__imagemTexto{
+        --imagemTexto_largura_base: 300px;
+    }
+    .sobre_imagemTexto__texto{
+        font-size: var(--texto_normal);
+    }
+
+    .imagemTexto_texto__textoDestaque{
+        font-size: var(--texto_grande);
+    }
+} 
+
+
 @media screen and (max-width: 744px ){
     .conteudo__banner{
         padding: var(--margem_pequena) var(--margem_media);
@@ -61,6 +123,24 @@
    
     .conteudo_banner__frase{
         font-size: 36px;      
+    }
+
+    .conteudo__sobre{
+        padding: var(--margem_pequena) var(--margem_media);
+    }
+}
+
+/*complementar*/
+@media screen and (max-width: 680px){
+    .conteudo_sobre__imagemTexto{
+        --imagemTexto_largura_base: 100%;
+
+        flex-direction: column;
+        gap: var(--espacamento_grande);
+    }
+
+    .sobre_imagemTexto__texto{
+        gap: var(--espacamento_normal);
     }
 }
 
@@ -89,5 +169,22 @@
     .conteudo__banner{        
         padding: var(--margem_muito_pequena) var(--margem_pequena);
     }
+    
+    .conteudo__sobre{
+        padding: var(--margem_muito_pequena) var(--margem_pequena);
+    }
+
+     .conteudo_sobre__titulo{
+        font-size: var(--texto_normal);    
+    }
+
+    .imagemTexto_texto__textoDestaque{
+        font-size: var(--texto_normal);
+    }
+    
+    .sobre_imagemTexto__texto{
+        font-size: var(--texto_pequeno);
+    }
+
     
 }
